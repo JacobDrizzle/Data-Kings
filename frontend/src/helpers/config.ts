@@ -1,0 +1,112 @@
+// ./src/helpers/config.ts
+
+import type { SiteConfig } from '../types/Config';
+
+const config: SiteConfig = {
+  title: 'Data-Kings',
+  description: 'Revolutionizing data monetization through blockchain technology',
+  source: 'https://github.com/jacobdrizzle/data-kings',
+  baseUrl: 'https://jacobdrizzle.dev',
+  routeLinks: [
+    { label: 'Home', route: '/', color: 'var(--accent-1, #ff0099)' },
+    {
+      label: 'Token',
+      route: '/token',
+      color: 'var(--accent-4, #1de691)',
+      description: 'Get detailed information about our cryptocurrency',
+    },
+    {
+      label: 'About',
+      route: '/about',
+      color: 'var(--accent-3, #01c0f0)',
+      description: 'Learn about our mission, and the team',
+    },
+    {
+      label: 'Dashboard',
+      route: '/dashboard',
+      color: 'var(--accent-2, #b45eff)',
+      description: 'Read the comprehensive guide to our project',
+    },
+    {
+      label: 'Sign Up',
+      route: '/auth/login',
+      color: 'var(--accent-1, #ff0099)',
+      description: 'Join Data-Kings and start earning from your data!',
+    },
+  ],
+  footerInfo: {
+    author: 'Data Kings',
+    authorSite: 'https://github.com/jacobdrizzle',
+    license: 'MIT',
+    licenseLink: '',
+    copyright: true,
+  },
+  defaultTheme: 'callisto',
+  defaultLanguage: 'en',
+  colorSchemes: {
+    dark: {
+      background: '#101010',
+      foreground: '#fafafa',
+      'dimmed-text': '#808080',
+      'card-background': '#1b1b1b',
+      'card-border': '1px solid #2a2a2a',
+      'code-background': '#333',
+      accent: '#01c0f0',
+      'accent-1': '#ff0099',
+      'accent-2': '#b45eff',
+      'accent-3': '#01c0f0',
+      'accent-4': '#1de691',
+      'home-accent-background': '#2a3367',
+      'home-accent-foreground': 'var(--foreground)',
+    },
+    light: {
+      background: '#ededed',
+      foreground: '#2a3367',
+      'card-background': '#F8F8FF',
+      'card-border': '1px solid #0000001a',
+      'home-accent-background': '#2a3367',
+      'home-accent-foreground': 'var(--foreground)',
+    },
+    callisto: {
+      background: '#0a192f',
+      foreground: '#dcdcdc',
+      'dimmed-text': '#8892b0',
+      'card-background': '#0b1021',
+      'card-border': '1px solid #ffffff1a',
+      'accent-1': '#00ccb4',
+      'accent-2': '#00ccb4',
+      'accent-3': '#00ccb4',
+      'accent-4': '#00ccb4',
+      'voronoi-background': '#0a192f',
+
+      'home-accent-background': '#00ccb4',
+      'home-tile-background': '#0B1021',
+      'voronoi-lines': '#4ee8d61a',
+
+      'voronoi-c1': '#141B33',
+      'voronoi-c2': '#131A31',
+      'voronoi-c3': '#12192F',
+      'voronoi-c4': '#11182D',
+      'voronoi-c5': '#10172B',
+      'voronoi-c6': '#0F1629',
+      'voronoi-c7': '#0E1527',
+      'voronoi-c8': '#0D1425',
+      'voronoi-c9': '#0C1323',
+      'voronoi-c10': '#0B1221',
+
+      'voronoi-r0': '#141b33',
+      'voronoi-r1': '#141b33',
+      'voronoi-r2': '#12182e',
+      'voronoi-r3': '#101629',
+      'voronoi-r4': '#0e1324',
+      'voronoi-r5': '#0c101f',
+      'voronoi-r6': '#0c101f',
+      'voronoi-r7': '#0a0e1a',
+      'voronoi-r8': '#0a0e1a',
+      'voronoi-r9': '#080b14',
+      'voronoi-r10': '#06080f',
+    },
+  },
+};
+
+export default config;
